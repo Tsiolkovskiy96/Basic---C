@@ -36,6 +36,27 @@ int main()	{
 	// Third task
 	printf (" \n");
 	printf ("Task III\n");
+		int a = 1;
+		int num;
+	do {
+		printf("Enter positive number not exceed 1000 : ");
+		scanf("%d", &num);
+		printf("%s", (num >= 0) && (num <=1000) ? "" : "Incorrect value\n");
+	} while ((num > 1000) || (num < 0));
+	printf("Even numbers: ");
+	for (a = 1; a < num; a++)
+	{
+		if (a % 2 == 0)
+		{
+			printf("%d,", a);
+		}
+	}
+	printf ("\n");
+
+	// Fourth task
+	printf ("\n");
+	printf ("Task IV\n");
+
 	return 0;
 }
 
