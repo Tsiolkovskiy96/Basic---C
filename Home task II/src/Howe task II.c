@@ -52,25 +52,6 @@ int main()	{
 		}
 	}
 	printf ("\n");
-
-	// Fourth task
-	printf ("\n");
-	printf ("Task IV\n");
-
-	/*
-   ^	1 = 1 = 3
-  ^^^	2 = 3 = 2
- ^^^^^	3 = 5 = 1
-^^^^^^^	4 = 7 = 0
-		5 = 9
-		6 = 11
-v = user	|	initial		|Intermediate	|	Final		|
-s = ?		|	s = v - w	|	s = v - w	|	s = v - w	|
-^ = ?		|	^ = v + w	|	^ = v + w	|	^ = v + w	|
-
-	  */
-
-
 	return 0;
 }
 
