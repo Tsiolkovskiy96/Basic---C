@@ -11,7 +11,7 @@
 #include <stdio.h>
 
 int main()	{
-
+/*
 	// First task
 	printf ("Task I\n");
 		int value;
@@ -51,7 +51,32 @@ int main()	{
 			printf("%d,", a);
 		}
 	}
-	printf ("\n");
+	printf (" \n");
+*/
+	// Third task
+	printf (" \n");
+	printf ("Task IV\n");
+
+	int i;
+	int num;
+	printf("Insert number =");
+	scanf("%d", &num);
+			for(i = 0; i < num; ++i)
+			{
+				for( int j = 1; j < num - i; ++j) printf(" ");
+				for( int j = num - i; j <= num - i; ++j) printf("^ ");
+				printf("\n");
+			}
+
+			for (i = 0; i < num; ++i)
+			{
+				int hor = i;
+				char shift[8];
+				sprintf(shift, "%%%dc", num - i); // "%3c"
+				printf(shift, '^');
+				while(hor-- > 0) printf("%c", '^');
+				printf("\n");
+			}
 	return 0;
 }
 
