@@ -11,7 +11,7 @@
 #include <stdio.h>
 
 int main()	{
-/*
+
 	// First task
 	printf ("Task I\n");
 		int value;
@@ -52,31 +52,21 @@ int main()	{
 		}
 	}
 	printf (" \n");
-*/
-	// Third task
-	int num;
+
+	// Fourth task
+	printf (" \n");
+	printf ("Task IV\n");
+
+	int line;
 	printf("Please enter line amount to draw right triangle: ");
-	scanf("%d", &num);
-
-	printf("First variant\n");
-	for ( int i = 0; i < num; ++i)
+	scanf("%d", &line);
+	for ( int i = 0; i < line; ++i)
 	{
-		for ( int j = 1; j < num - i; ++j) printf(" ");
-		for ( int j = num - i; j <= num; ++j) printf("^ ");
+		for ( int j = 1; j < line - i; ++j) printf(" ");
+		for ( int j = line - i; j <= line; ++j) printf("^ ");
 		printf("\n");
 	}
 
-	printf("\n");
-	printf("Second variant\n");
-	for ( int i = 0; i < num; ++i )
-	{
-		int hor = i;
-		char shift [8];
-		sprintf(shift, "%%%dc", num - i);
-		printf(shift, '^');
-		while (hor-- > 0) printf(" %c", '^');
-		printf("\n");
-	}
 	return 0;
 }
 
