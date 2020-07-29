@@ -54,29 +54,30 @@ int main()	{
 	printf (" \n");
 */
 	// Third task
-	printf (" \n");
-	printf ("Task IV\n");
-
-	int i;
 	int num;
-	printf("Insert number =");
+	printf("Please enter line amount to draw right triangle: ");
 	scanf("%d", &num);
-			for(i = 0; i < num; ++i)
-			{
-				for( int j = 1; j < num - i; ++j) printf(" ");
-				for( int j = num - i; j <= num - i; ++j) printf("^ ");
-				printf("\n");
-			}
 
-			for (i = 0; i < num; ++i)
-			{
-				int hor = i;
-				char shift[8];
-				sprintf(shift, "%%%dc", num - i); // "%3c"
-				printf(shift, '^');
-				while(hor-- > 0) printf("%c", '^');
-				printf("\n");
-			}
+	printf("First variant\n");
+	for ( int i = 0; i < num; ++i)
+	{
+		for ( int j = 1; j < num - i; ++j) printf(" ");
+		for ( int j = num - i; j <= num; ++j) printf("^ ");
+		printf("\n");
+	}
+
+	printf("\n");
+	printf("Second variant\n");
+	for ( int i = 0; i < num; ++i )
+	{
+		int hor = i;
+		char shift [8];
+		sprintf(shift, "%%%dc", num - i);
+		printf(shift, '^');
+		while (hor-- > 0) printf(" %c", '^');
+		printf("\n");
+	}
 	return 0;
 }
+
 
